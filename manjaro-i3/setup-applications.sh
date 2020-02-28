@@ -5,5 +5,5 @@ sudo pacman -S \
   chromium \
   code \
   nodejs \
-  npm
-
+  npm \
+  java-openjdk-bin
