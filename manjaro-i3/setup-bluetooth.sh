@@ -1,12 +1,8 @@
 #!/bin/bash
 
-if [ ! -f ./.rerun ]; then
-	echo "install"
-else if [ ! grep -q btretry "./.rerun" ]; then
-	echo "install"
+if ! grep -q btretry ./.rerun; then
+	sudo pacman -S bluez bluez-utils
 fi
-
-exit 0
 
 sudo systemctl start bluetooth
 
@@ -28,4 +24,10 @@ if [ $? -eq 5 ]; then
 fi
 
 sudo systemctl enable bluetooth
+
+sudo bluetoothctl power on
+sudo bluetoothctl agent on
+sudo bluetoothctl default-agent
+sudo bluetoothctl scan on
+
 
