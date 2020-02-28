@@ -1,0 +1,9 @@
+#!/bin/sh
+
+case "$2" in
+	up)
+		sudo timedatectl set-ntp 1
+		sudo timedatectl set-timezone "Europe/Oslo"
+	;;
+esac
+
