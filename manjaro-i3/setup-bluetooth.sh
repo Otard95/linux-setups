@@ -30,4 +30,3 @@ sudo bluetoothctl agent on
 sudo bluetoothctl default-agent
 sudo bluetoothctl scan on
 
-
