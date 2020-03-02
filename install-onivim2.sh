@@ -5,10 +5,10 @@ while : ; do
   read lKey
   printf "checking..."
   valid=$(curl -s https://www.onivim.io/api/isLicenseKeyValid?licenseKey=$lKey)
+  echo ""
   [[ $valid == "true" ]] && break
   echo "That key seems to be invalid."
 done
-echo ""
 
 firebaseToken=$(curl -s https://www.onivim.io/auth/licenseKey?licenseKey=$lKey | grep -oP '(?<=token":")(.+)(?=")')
 
