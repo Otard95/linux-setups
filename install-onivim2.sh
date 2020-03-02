@@ -10,6 +10,8 @@ while : ; do
   echo "That key seems to be invalid."
 done
 
+echo "Generating download url..."
+
 firebaseToken=$(curl -s https://www.onivim.io/auth/licenseKey?licenseKey=$lKey | grep -oP '(?<=token":")(.+)(?=")')
 
 # https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyCustomToken?key=AIzaSyDxflsfyd2gloxgWJ-GFtPM46tz-TtOXh8
@@ -22,8 +24,11 @@ urlToken=$(curl -s \
 
 # https://v2.onivim.io/downloads/Onivim2-x86_64.AppImage?channel=nightly&token=
 
+echo "Create /opt dirctory and download..."
 sudo mkdir -p /opt/Onivim2
 sudo curl https://v2.onivim.io/downloads/Onivim2-x86_64.AppImage?channel=nightly&token=$urlToken --output /opt/Onivim2/Onivim2.AppImage
+sudo chmod +x /opt/Onivim2/Onivim2.AppImage
+echo "Add symlink to /usr/local/bin"
 sudo ln -s -T /opt/Onivim2/Onivim2.AppImage /usr/local/bin/oni2
 
 echo "Done!"
