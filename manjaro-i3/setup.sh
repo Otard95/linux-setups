@@ -4,7 +4,13 @@ echo ""
 echo " === Update and install applications ==="
 echo ""
 
-./setup_applications.sh
+./setup-applications.sh
+
+echo ""
+echo " === Install watchman ==="
+echo ""
+
+../general/setup-watchman.sh
 
 echo ""
 echo " === Install Onivim2 ==="
