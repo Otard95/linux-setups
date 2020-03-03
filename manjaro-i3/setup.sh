@@ -10,7 +10,7 @@ echo ""
 echo " === Add and append to dot files ==="
 echo ""
 
-./setup-dot-files.sh
+../general/setup-dot-files.sh
 . ~/.bashrc
 echo ""
 echo "!!! You might need to re-source ~/.bashrc"

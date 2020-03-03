@@ -14,8 +14,6 @@ Bluetooth is a bit finiky and is still beeing improoved.
  > Updated pacman and installs basic applications like chromium, vscode and node.
  - `setup-system.sh`
  > Configures xrandr(edit `xrandr-settings.desktop`) and the system clock
- - `setup-dot-files.sh`
- > Adds some useful config to your bashrc including aliases. Also adds vimrc and global gitignore
  - `setup-bluetooth.sh`
  > Installs and atempts to configure bluetooth service.
 
