@@ -7,6 +7,12 @@ echo ""
 ./setup_applications.sh
 
 echo ""
+echo " === Install Onivim2 ==="
+echo ""
+
+../general/install-omivim2.sh
+
+echo ""
 echo " === Add and append to dot files ==="
 echo ""
 
