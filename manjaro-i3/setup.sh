@@ -16,13 +16,14 @@ echo ""
 echo " === Install Onivim2 ==="
 echo ""
 
-../general/install-omivim2.sh
+cd ../general/
+./install-omivim2.sh
 
 echo ""
 echo " === Add and append to dot files ==="
 echo ""
 
-../general/setup-dot-files.sh
+./setup-dot-files.sh
 . ~/.bashrc
 echo ""
 echo "!!! You might need to re-source ~/.bashrc"
@@ -31,6 +32,7 @@ echo ""
 echo " === Setup system config ==="
 echo ""
 
+cd ../manjaro-i3/
 ./setup-system.sh
 
 echo ""
