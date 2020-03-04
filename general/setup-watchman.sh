@@ -10,12 +10,12 @@ case "$ans" in
   *)
     echo ""
     echo ""
-    sudo pacman -S libssl-dev autoconf automake libtool setuptools python-dev libfolly # verify packages
+    sudo pacman -S autoconf automake libtool # verify libssl-dev
     
     git clone https://github.com/facebook/watchman.git -b v4.9.0 --depth 1
     cd watchman 
     ./autogen.sh
-    ./configure
+    ./configure --with-python=/usr/bin/python --with-pcre=/usr/bin/pcre-config
     make
     sudo make install
     
@@ -23,6 +23,4 @@ case "$ans" in
     rm -r watchman/
     ;;
 esac
-
-
 
