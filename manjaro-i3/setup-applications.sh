@@ -10,7 +10,6 @@ packages=(
 "jre-openjdk" \
 "jdk-openjdk" \
 "gcc" \
-"g++" \
 )
 
 echo ""
