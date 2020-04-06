@@ -10,6 +10,7 @@ packages=(
 "jre-openjdk" \
 "jdk-openjdk" \
 "gcc" \
+"watchman" \
 )
 
 echo ""
