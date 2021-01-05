@@ -7,3 +7,7 @@
 **.swp
 **/ctags-index-files.rc
 **/tags
+.agit-index
+.php_cs
+.ngm
+

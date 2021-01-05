@@ -11,6 +11,7 @@ packages=(
 "jdk-openjdk" \
 "gcc" \
 "watchman" \
+"docker" \
 )
 
 echo ""

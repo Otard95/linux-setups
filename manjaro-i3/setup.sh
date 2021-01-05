@@ -7,24 +7,13 @@ echo ""
 ./setup-applications.sh
 
 echo ""
-echo " === Install watchman ==="
-echo ""
-
-../general/setup-watchman.sh
-
-echo ""
-echo " === Install Onivim2 ==="
-echo ""
-
-cd ../general/
-./install-omivim2.sh
-
-echo ""
 echo " === Add and append to dot files ==="
 echo ""
 
+cd ../general/
 ./setup-dot-files.sh
 . ~/.bashrc
+
 echo ""
 echo "!!! You might need to re-source ~/.bashrc"
 

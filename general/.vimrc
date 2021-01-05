@@ -10,6 +10,10 @@ Plug 'StanAngeloff/php.vim'
 Plug 'ncm2/ncm2'
 Plug 'phpactor/phpactor'
 Plug 'phpactor/ncm2-phpactor'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+Plug 'honza/vim-snippets'
 
 call plug#end()
 
@@ -30,7 +34,7 @@ filetype plugin indent on
 set number	               " Show line numbers
 set relativenumber             " Line numbers are relative to caret position
 set linebreak	               " Break lines at word (requires Wrap lines)
-set showbreak=+++	       " Wrap-broken line prefix
+set showbreak=⟞	               " Wrap-broken line prefix
 set textwidth=175	       " Line wrap (number of cols)
 set showmatch	               " Highlight matching brace
 " set spell	               " Enable spell-checking -- so distracting
