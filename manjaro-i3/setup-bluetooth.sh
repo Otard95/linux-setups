@@ -1,7 +1,9 @@
 #!/bin/bash
 
-if ! grep -q btretry ./.rerun; then
-	sudo pacman -S bluez bluez-utils
+if [ ! -f ./.rerun ]; then
+  sudo pacman -S bluez bluez-utils
+elif ! grep -q btretry ./.rerun; then
+  sudo pacman -S bluez bluez-utils
 fi
 
 sudo systemctl start bluetooth

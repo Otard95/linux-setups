@@ -12,6 +12,7 @@ packages=(
 "gcc" \
 "watchman" \
 "docker" \
+"dbeaver" \
 )
 
 echo ""
